@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Clasesita objetito = new Clasesita();
         objetito.setTexto(editadito.getText().toString());
-        Toast.makeText(this, "as " + objetito.vocala(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "as " + objetito.vocala() + "es " + objetito.vocale() + "is " + objetito.vocali() + "os " + objetito.vocalo() + "us " + objetito.vocalu(), Toast.LENGTH_SHORT).show();
     }
 }
