@@ -8,9 +8,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText editadito;
@@ -28,8 +25,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         Clasesita objetito = new Clasesita();
         objetito.setTexto(editadito.getText().toString());
-        Toast.makeText(this, "as " + objetito.vocala() + "es " + objetito.vocale() + "is " + objetito.vocali() + "os " + objetito.vocalo() + "us " + objetito.vocalu(), Toast.LENGTH_SHORT).show();
+
+        if (objetito.vocala()==1){
+            Toast.makeText(this, "Tiene: " + objetito.vocala() + " a", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Tiene " + objetito.vocala() + " aes",Toast.LENGTH_SHORT).show();
+        }
+
+        if (objetito.vocale()==1){
+            Toast.makeText(this, "Tiene: " + objetito.vocale() + " e", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Tiene " + objetito.vocale() + " es",Toast.LENGTH_SHORT).show();
+        }
+
+        if (objetito.vocali()==1){
+            Toast.makeText(this, "Tiene: " + objetito.vocali() + " i", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Tiene " + objetito.vocali() + " is",Toast.LENGTH_SHORT).show();
+        }
+
+        if (objetito.vocalo()==1){
+            Toast.makeText(this, "Tiene: " + objetito.vocalo() + " o", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Tiene " + objetito.vocalo() + " os",Toast.LENGTH_SHORT).show();
+        }
+
+        if (objetito.vocalu()==1){
+            Toast.makeText(this, "Tiene: " + objetito.vocalu() + " u", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Tiene " + objetito.vocalu() + " úes",Toast.LENGTH_SHORT).show();
+        }
     }
 }
